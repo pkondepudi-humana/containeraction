@@ -1,0 +1,14 @@
+name: 'sample container action'
+description 'practice'
+author: 'chad'
+inputs:
+  myInput: 
+    description: 'greeting'
+    required: true
+    default: 'Awesome'
+outputs:
+  myOutput:
+    description: 'total memory'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
